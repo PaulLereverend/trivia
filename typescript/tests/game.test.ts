@@ -1,6 +1,6 @@
-import {expect} from 'chai';
-import {describe, it} from 'mocha';
-import {GameRunner} from '../src/game-runner';
+import { expect } from 'chai';
+import { describe, it } from 'mocha';
+import { GameRunner } from '../src/game-runner';
 
 describe('The test environment', () => {
     it('should pass', () => {
@@ -10,5 +10,8 @@ describe('The test environment', () => {
     it("should access game", function () {
         expect(GameRunner).to.not.be.undefined;
     });
+    it("should run tests", function () {
+        expect(true).to.be.true;
+    })
 
 });
